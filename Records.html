@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./Records.css">
+  <title>Assignment Task</title>
+</head>
+
+<body>
+  <div class="card m-auto">
+    <div class="card-body">
+      <form onSubmit="handleRecords(event)" method='post'>
+        <div class="mb-3">
+          <h2>USER DETAIL FORM</h2>
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Full Name</label><br />
+          <input type="text" class="form-control" id="inputName" onChange="" />
+        </div>
+        <div class="mb-3">
+          <label for="inputAge" class="form-label">Age</label> <br />
+          <input type="number" class="form-control" id="inputAge" onChange="" />
+        </div>
+        <div class="mb-3">
+          <label for="inputPhone" class="form-label">Phone Number</label> <br />
+          <input type="number" class="form-control" id="inputPhone" onChange="" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="records">
+    <h3 class='text-center text-light'>Data Table</h3>
+    <div class="records-table">
+      <table>
+        <thead>
+          <th>SNo.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Actions</th>
+
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td>0</td>
+            <td>JohnDoe</td>
+            <td>21</td>
+            <td>1236054789</td>
+            <td>
+              <i class="fa-solid fa-pen-to-square edit" onclick="handleEdit()"></i> &nbsp;
+              <i class="fa-solid fa-file-circle-check save" onclick="handleSave()"></i>&nbsp;
+              <i class="fa-solid fa-trash-can delete" onclick="handleDelete()"></i>
+            </td>
+          </tr> -->
+         
+          <!-- Dynamic Data here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./Records.js"></script>
+  <!-- <script src="./Record2.js"></script> -->
+
+</body>
+
+</html>
